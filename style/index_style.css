@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.background {
+    height: 100vh; /* Ensure the background takes the full height of the viewport */
+    background-color: rgba(0,0,0,1);
+}
+
+.split {
+    display: flex;
+    height: 100%;
+}
+
+.sideBar {
+    width: 100px;
+    background-color: #853e3e; /* Example background color */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.sideIcon img{
+    max-width: 100%;
+    height: auto;
+}
+
+.contentBody {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px;
+    flex: 1 1 70%;
+    background-color: #395397; /* Example background color */
+}
+
+.recommendedBot {
+    flex: 1 1 30%;
+    background-color: #852374; /* Example background color */
+}
