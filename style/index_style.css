@@ -33,6 +33,16 @@ body {
     padding: 25px;
     flex: 1 1 70%;
     background-color: #395397; /* Example background color */
+    text-wrap: wrap;
+}
+
+.contentBody h1, h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.contentBody p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(225, 225, 225);
 }
 
 .recommendedBot {
