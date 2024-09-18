@@ -1,7 +1,9 @@
 # Style Guide
 
 Formatting of Bot development guides is now normalized across the board, this will allow us to have a consistent presentation across the website and we will also be able to let a creator know to fix stuff in their guide if their formatting does not exactly make our life easy.
+
 ---
+
 ## Format Tags
 
 We will be using the following tags to format, in rare instances we'd use other formatting if required:
@@ -17,7 +19,9 @@ Example uses:
 ```<h3>Writing Scenarios</h3>``` - Subtitles, Say you have "The Scenario" and within that part of the guide you have multiple different points the creator touches, each point starts with it's own sub-title, that's where H3 comes in.
 
 ```<p>Lorem Ipsum</p>``` - Your everyday text, nothing special, just text that is NOT a title xD.
+
 ---
+
 ## Advanced Formatting
 
 If you're feeling fancy and want to do the entire formatting, I have the guide for that as well! Though this one's a LITTLE bit more complicated due to the nature of HTML.
@@ -41,6 +45,8 @@ Let's start with a short explanation of how the guide format works using a real 
 This is the most BASIC of setups, the bigger the guide the bigger this will get and the more complex the setup, some guides will most certainly require multiple <div> tags inside of <div> tags, etc. 
 
 But generally that is it. 
+
+---
 
 ### How it works?
 *I'm glad you asked*
