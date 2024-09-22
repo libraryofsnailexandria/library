@@ -1,12 +1,11 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    color:white;
+    color:#3a6ea5;
 }
 
 .background {
     height: 100vh; /* Ensure the background takes the full height of the viewport */
-    background-color: rgba(0,0,0,1);
 }
 
 .split {
@@ -16,25 +15,31 @@ body {
 
 .sideBar {
     width: 100px;
-    background-color: #853e3e; /* Example background color */
+    background-color: #2d2d2d; /* Example background color */
     display:flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
     text-wrap: wrap;
 }
-.sideBar a{
-    background-color: #853e3e; /* Example background color */
+.menuLinks{
+    background-color: #2d2d2d; /* Example background color */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-decoration: none;
-    color: white;
-    margin-left:10px;
-    margin-right:10px;
     transition: background-color 0.3s ease;
 }
+.menuLinks a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #eaeaea;
+}
 
-.sideBar a:hover{
-    background-color: rgb(75, 23, 23);
+.menuLinks :hover{
+    background-color: #6a5acd;
 }
 
 .sideIcon img{
@@ -47,24 +52,42 @@ body {
     flex-direction: column;
     align-items: left;
     padding: 25px;
-    flex: 1 1 70%;
-    background-color: #395397; /* Example background color */
+    flex: 1 1 65%;
+    background-color: #1a1a1a; /* Example background color */
     text-wrap: wrap;
 }
 
 .contentBody h1, h2, h3{
-    color: white;
+    color: #3a6ea5;
 }
 .contentBody p{
-    color: rgb(225, 225, 225);
+    color: #d4d4d4;
 }
 
-.recommendedBot {
-    display:flex;
+.notchBar{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    height: 100vh;
+    width: 50px;
+    background-color: #3c3c3c;
+}
+
+.notchButton{
+    background-color: #3c3c3c;
+    width: 100%;
+    height: 50px;
+    color:white;
+}
+
+.recommendedBot{
+    display:none;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 20%;
-    background-color: #852374; /* Example background color */
+    height: 100vh;
+    width: 280px;
+    background-color: #3c3c3c;
+    z-index: 1;
 }
 
 .botBox{
@@ -72,14 +95,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.25);
+    background-color: #3c3c3c;
     border-radius: 15px;
-    width: 90%;
+    width: 220px;
     height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
     text-decoration: none;
-    color: white;
+    color: #cccccc;
+    transition: background-color 0.3s ease;
+    outline: 2px solid #5f9ea0;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.15);
 }
 
 .botBox img{
@@ -88,4 +114,8 @@ body {
     height: 100px;
     object-fit: cover;
     object-position: center;
+}
+
+.botBox:hover {
+    background-color: #5f9ea0;
 }

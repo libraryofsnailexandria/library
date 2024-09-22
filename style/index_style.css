@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color:#3a6ea5;
 }
 
 .background {
@@ -14,11 +16,31 @@ body {
 
 .sideBar {
     width: 100px;
-    background-color: #853e3e; /* Example background color */
+    background-color: #2d2d2d; /* Example background color */
     display:flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    text-wrap: wrap;
+}
+.menuLinks{
+    background-color: #2d2d2d; /* Example background color */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.menuLinks a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.menuLinks :hover{
+    background-color: #6a5acd;
 }
 
 .sideIcon img{
@@ -32,25 +54,23 @@ body {
     align-items: left;
     padding: 25px;
     flex: 1 1 70%;
-    background-color: #395397; /* Example background color */
+    background-color: #1a1a1a; /* Example background color */
     text-wrap: wrap;
 }
 
 .contentBody h1, h2, h3{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #3a6ea5;
 }
 .contentBody p{
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(225, 225, 225);
+    color: #d4d4d4;
 }
 
 .recommendedBot {
     display:flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 30%;
-    background-color: #852374; /* Example background color */
+    flex: 1 1 250px;
+    background-color: #3c3c3c; /* Example background color */
 }
 
 .botBox{
@@ -58,14 +78,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.25);
+    background-color: #3c3c3c;
     border-radius: 15px;
-    width: 70%;
+    width: 220px;
     height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
     text-decoration: none;
-    color: white;
+    color: #cccccc;
+    transition: background-color 0.3s ease;
+}
+
+.botBox:hover {
+    background-color: #5f9ea0;
 }
 
 .botBox img{
