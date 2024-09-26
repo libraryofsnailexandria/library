@@ -1,49 +1,55 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    color:#3a6ea5;
+    color: #3a6ea5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .background {
-    height: 100vh; /* Ensure the background takes the full height of the viewport */
-    background-color: rgba(0,0,0,1);
+    min-height: 100vh; /* Ensure the background takes the full height of the viewport */
 }
 
 .split {
     display: flex;
-    height: 100%;
+    min-height: 100vh; /* Ensure the split container takes at least the full height of the viewport */
+    flex: 1; /* Allow it to grow and fill the remaining space */
 }
 
 .sideBar {
     width: 100px;
     background-color: #2d2d2d; /* Example background color */
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
     text-wrap: wrap;
+    min-height: 100vh; /* Ensure the sidebar takes at least the full height of the viewport */
 }
-.menuLinks{
+
+.menuLinks {
     background-color: #2d2d2d; /* Example background color */
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     transition: background-color 0.3s ease;
 }
-.menuLinks a{
+
+.menuLinks a {
     width: 100%;
     text-align: center;
     text-decoration: none;
     color: #eaeaea;
 }
 
-.menuLinks :hover{
+.menuLinks :hover {
     background-color: #6a5acd;
 }
 
-.sideIcon img{
+.sideIcon img {
     max-width: 100%;
     height: auto;
 }
@@ -53,28 +59,48 @@ body {
     flex-direction: column;
     align-items: left;
     padding: 25px;
-    flex: 1 1 70%;
+    flex: 1; /* Allow it to grow and fill the remaining space */
     background-color: #1a1a1a; /* Example background color */
     text-wrap: wrap;
+    min-height: 100vh; /* Ensure the content body takes at least the full height of the viewport */
 }
 
-.contentBody h1, h2, h3{
-    color: #3a6ea5;
+.contentBody h1, h2, h3 {
+    color: #5495da;
 }
-.contentBody p{
+
+.contentBody p {
     color: #d4d4d4;
 }
 
-.recommendedBot {
-    display:flex;
+.notchBar {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1 1 250px;
-    background-color: #3c3c3c; /* Example background color */
+    align-items: right;
+    min-height: 100vh;
+    width: 50px;
+    background-color: #3c3c3c;
 }
 
-.botBox{
-    display:flex;
+.notchButton {
+    background-color: #3c3c3c;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.recommendedBot {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 280px;
+    background-color: #3c3c3c;
+    z-index: 1;
+}
+
+.botBox {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -87,16 +113,18 @@ body {
     text-decoration: none;
     color: #cccccc;
     transition: background-color 0.3s ease;
+    outline: 2px solid #5f9ea0;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.botBox:hover {
-    background-color: #5f9ea0;
-}
-
-.botBox img{
+.botBox img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
     object-position: center;
+}
+
+.botBox:hover {
+    background-color: #5f9ea0;
 }
